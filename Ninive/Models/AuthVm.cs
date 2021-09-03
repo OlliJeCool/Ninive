@@ -9,5 +9,6 @@ namespace Ninive.Models
     {
         public int Code { get; set; }
         public string PinHash { get; set; }
+        public string newPinHash { get; set; }
     }
 }

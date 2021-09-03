@@ -6,6 +6,7 @@ using Ninive.Data;
 using Ninive.Services;
 using Ninive.Models;
 using Microsoft.Data.SqlClient;
+using Ninive.Utilities;
 
 namespace Ninive.Services
 {
@@ -19,7 +20,7 @@ namespace Ninive.Services
         }
         public UserVm Authenticate(AuthVm model)
         {
-            var user = _context.Users.SingleOrDefault(x => x.Code == model.Code && x.PinHash == model.PinHash);
+            var user = _context.Users.SingleOrDefault(x => x.Code == model.Code && x.PinHash == Utils.Sha512Hash(model.PinHash));
 
             if (user is null) { return null; }
 

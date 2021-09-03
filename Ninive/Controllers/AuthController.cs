@@ -33,10 +33,10 @@ namespace Ninive.Controllers
         }
 
         [HttpPost("user/newPass")]
-        public IActionResult ChangePassword([FromBody] AuthVm model, ChangePasswordVm newPin)
+        public IActionResult ChangePassword([FromBody] AuthVm model)
         {
-            var user = _userService.ChangePassword(model, newPin);
-            if(user is null) { return BadRequest("Error!"); }
+            var user = _userService.ChangePassword(model);
+            if (user is null) { return BadRequest("Meh"); }
             else { return Ok(user); }
         }
     }

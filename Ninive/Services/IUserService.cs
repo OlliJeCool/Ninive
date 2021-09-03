@@ -8,6 +8,6 @@ namespace Ninive.Services
 {
     public interface IUserService
     {
-        UserVm ChangePassword(AuthVm model, ChangePasswordVm newPin);
+        UserVm ChangePassword(AuthVm model);
     }
 }

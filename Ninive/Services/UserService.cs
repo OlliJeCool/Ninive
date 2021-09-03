@@ -17,11 +17,11 @@ namespace Ninive.Services
             _context = context;
         }
 
-        public UserVm ChangePassword(AuthVm model, ChangePasswordVm pinModel)
+        public UserVm ChangePassword(AuthVm model)
         {
-            var user = _context.Users.SingleOrDefault(x => x.Code == model.Code && Utils.Sha512Hash(model.PinHash) == Utils.Sha512Hash(x.PinHash));
+            var user = _context.Users.SingleOrDefault(x => x.Code == model.Code && Utils.Sha512Hash(model.PinHash) == x.PinHash);
             if (user is null) { return null; }
-            else { user.PinHash = pinModel.newPinHash; return new UserVm { Name = user.Name, Code = user.Code }; }
+            else { user.PinHash = model.newPinHash; return new UserVm { Name = user.Name, Code = user.Code }; }
         }
     }
 }

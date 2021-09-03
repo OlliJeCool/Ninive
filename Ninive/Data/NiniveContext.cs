@@ -6,10 +6,12 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Ninive.Data
 {
-    public class NiniveContext
+    public class NiniveContext : DbContext
     {
         public DbSet<User> Users { get; set; }
+        public DbSet<Book> Books { get; set; }
         public NiniveContext(DbContextOptions options)
+            : base(options)
         {
 
         }

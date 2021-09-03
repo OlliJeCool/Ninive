@@ -11,6 +11,10 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Ninive.Models;
+using Ninive.Services;
+using Ninive.Data;
+using Microsoft.EntityFrameworkCore;
 
 namespace Ninive
 {
@@ -32,6 +36,10 @@ namespace Ninive
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "Ninive", Version = "v1" });
             });
+            services.AddDbContext<NiniveContext>(options =>
+            options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+
+            services.AddScoped<IAuthService, AuthService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

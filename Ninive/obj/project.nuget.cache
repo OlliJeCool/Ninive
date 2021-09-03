@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "d9gxtHqwH5JJJdU/He5yN4hmzEqMSuvXXVsXFWaSZi+rkne55IfmrHW4nZOBFs8xM7joVv6x0apvtULiIEBvMA==",
+  "dgSpecHash": "X+RXhfEMqH5d+Tsb/yVIAZ0PcsX86neDIDkMJYZ3kZJR6KORFcvILukuSO/Hdprh6oCHOS2g+kjK80j1upxz1w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ollid\\source\\repos\\Ninive\\Ninive\\Ninive.csproj",
+  "projectFilePath": "C:\\Users\\ollid\\Desktop\\Ninive\\Ninive\\Ninive.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ollid\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\ollid\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",

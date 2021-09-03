@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31321.278
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ninive", "Ninive\Ninive.csproj", "{F463AE9E-E5E9-4A4F-A9C0-8EA94EE0D89A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F463AE9E-E5E9-4A4F-A9C0-8EA94EE0D89A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F463AE9E-E5E9-4A4F-A9C0-8EA94EE0D89A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F463AE9E-E5E9-4A4F-A9C0-8EA94EE0D89A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F463AE9E-E5E9-4A4F-A9C0-8EA94EE0D89A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {13519458-B240-47F5-8AAA-35F52D446A97}
+	EndGlobalSection
+EndGlobal

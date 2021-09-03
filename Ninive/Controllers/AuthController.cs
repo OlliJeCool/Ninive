@@ -14,9 +14,11 @@ namespace Ninive.Controllers
     public class AuthController : ControllerBase
     {
         private readonly IAuthService _authService;
-        public AuthController(IAuthService authService)
+        private readonly IUserService _userService;
+        public AuthController(IAuthService authService, IUserService userService)
         {
             _authService = authService;
+            _userService = userService;
         }
 
         [HttpPost("user/auth")]
@@ -29,5 +31,8 @@ namespace Ninive.Controllers
             }
             else { return Ok(user); }
         }
+
+        [HttpPost("user/newPass")]
+        public IActionResult ChangePassword([FromBody])
     }
 }
